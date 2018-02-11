@@ -17,6 +17,7 @@ public class PopupTest extends BaseTest{
 
     @BeforeMethod
     public void initMethod() {
+        System.out.println("Before Method");
         basePage = PageFactory.initElements(driver, BasePage.class);
 
     }
@@ -25,8 +26,8 @@ public class PopupTest extends BaseTest{
     @Test
     public void test1(){
 
-        setDriver();
-        initMethod();
+        //setDriver();
+        //initMethod();
 
         basePage.getPopupButton().click();
 

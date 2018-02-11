@@ -20,6 +20,8 @@ public abstract class BaseTest {
     @BeforeClass
     public void setDriver() {
 
+        System.out.println("Before Method BaseTest");
+
         System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
 
         ChromeOptions chromeOptions = new ChromeOptions();
